@@ -142,7 +142,7 @@ button {
 
 header,
 section {
-  overflow-x: hidden;
+  overflow-x: initial;
 }
 
 :root {
@@ -166,7 +166,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif !important;
   font-size: 16px;
-  font-weight: 700 !important;
+  font-weight: 600;
   background-color: #fff;
 }
 
@@ -180,8 +180,6 @@ body {
   background-size: cover;
   height: 100vh;
   padding-top: 1%;
-  background-color: #b1b1b1;
-  background-blend-mode: darken;
   overflow: hidden;
 }
 
@@ -257,9 +255,8 @@ body {
 
 .diagnostico a {
   background: var(--light-pink);
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
-  text-transform: uppercase;
   padding: 10px 15px;
   border-radius: 50px;
   transition: 0.2s all;
@@ -398,8 +395,9 @@ hr {
 
 .btn-green {
   color: var(--green-poussee);
+  font-weight: 700;
   text-decoration: none;
-    line-height: 1.35;
+    line-height: 2.15;
     display: inline-flex;
     -webkit-box-align: center;
     align-items: center;
@@ -432,6 +430,47 @@ hr {
 }
 
 .btn-green:hover a {
+  color: var(--green-poussee);
+  text-decoration: none;
+}
+
+.btn-black{
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+    line-height: 2.15;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 0px 100%, 100% 100%;
+    background-size: 0px 8%, 100% 8%;
+    transition: background-size 0.2s ease-in-out 0s;
+    background-image: linear-gradient(
+      120deg
+      , rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%), linear-gradient(
+      120deg
+      , transparent, transparent);
+}
+
+
+.btn-black img {
+  margin-left: 12px;
+}
+
+.btn-black:hover {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  background-size: 100% 8%, 100% 8%;
+}
+
+
+.btn-black a {
+  color: var(--green-poussee);
+}
+
+.btn-black:hover a {
   color: var(--green-poussee);
   text-decoration: none;
 }
@@ -501,11 +540,8 @@ hr {
 }
 
 .title-content {
-  color: #fff;
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 3rem;
-  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 1em;
 }
 
@@ -516,7 +552,176 @@ hr {
   text-decoration: none;
 }
 
-/* Section-1 confiar */
+/* Section-1 soluções */
+
+.solucoes {
+  padding: 100px 0px;
+}
+
+.solucoes .sistemas-boxes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .solucoes .sistemas-boxes {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .solucoes .sistemas-boxes .box {
+    width: 100% !important;
+  }
+
+  .solucoes .sistemas-boxes .box:hover {
+    width: 100% !important;
+  }
+
+  .solucoes .sistemas-boxes .tipos {
+    width: 100% !important;
+  }
+
+  .solucoes .sistemas-boxes .tipos:hover {
+    width: 100% !important;
+  }
+}
+
+.solucoes .sistemas-boxes .box {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  height: 379px;
+  width: 294px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.2s all;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  align-self: center;
+  vertical-align: middle;
+}
+
+.solucoes .sistemas-boxes .box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.solucoes .sistemas-boxes .box .title {
+  text-align: center;
+  z-index: 1;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.solucoes .sistemas-boxes .box .text {
+  text-align: center; 
+  z-index: 1;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.solucoes .sistemas-boxes .box .sistemas__button {
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.solucoes .sistemas-boxes .box .link i {
+  margin-left: 10px;
+}
+
+.solucoes .sistemas-boxes .box .overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-color: #000;
+  opacity: 0.2;
+}
+
+
+.solucoes .sistemas-boxes .box:hover .overlay-box {
+  background-color: var(--green-poussee);
+}
+
+
+
+.sistemas__button {
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+  padding: 15px 35px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.buscando {
+  background: #000;
+  color: #fff;
+  padding: 30px 15px;
+}
+
+.buscando .col-sm {
+  text-align: center;
+  padding: 0px;
+}
+
+.buscando h1 {
+  color: var(--green-poussee);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.buscando p {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 1em;
+  text-decoration: none;
+    line-height: 2.15;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 0px 100%, 100% 100%;
+    background-size: 0px 8%, 100% 8%;
+    transition: background-size 0.2s ease-in-out 0s;
+    background-image: linear-gradient(
+      120deg
+      , rgb(89, 203, 89) 0%, rgb(89, 203, 89) 100%), linear-gradient(
+      120deg
+      , transparent, transparent);
+}
+
+.buscando p:hover {
+  color: var(--green-poussee);
+  cursor: pointer;
+  text-decoration: none;
+  background-size: 100% 8%, 100% 8%;
+}
+
 
 .confiar {
   padding-top: 100px;
@@ -555,47 +760,12 @@ hr {
   text-decoration: none;
 }
 
-.varejo {
-  background-color: #414141;
-  background-image: url("../img/futuro-roge.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-blend-mode: overlay;
-  position: relative;
-  width: 100%;
-  height: 532px;
-}
 
-.varejo .row .text-white {
-  padding: 15vmin 40vmin 5vmin 0vmin;
-}
 
-.varejo .row .text-white h2 {
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 3rem;
-  text-transform: uppercase;
-}
 
-.varejo .row .text-white h3 {
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 3rem;
-  text-transform: uppercase;
-}
-
-.varejo .row .text-white p {
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: none;
-}
 
 @media (max-width: 768px) {
-  .confiar .row .col-md-6 .cartao-about {
-    text-align: center !important;
-  }
-
+ 
   .marcas .row .text-white {
     padding: 10vmin 1vmin 0 1vmin !important;
     text-align: center !important;
@@ -613,105 +783,224 @@ hr {
 
 /* Section-2 marcas */
 
-.marcas {
-  background-image: url("../img/marcas.jpg");
-  background-size: cover;
-  background-position: auto;
-  width: 100%;
-  height: auto;
+.marcas  {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.marcas .montadoras .logo {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.marcas .montadoras .logo img {
+  display: initial !important;
+}
+
+.marcas .montadoras {
+  width: 850px;
+  display: block;
+  margin: 0 auto;
   position: relative;
-  padding: 10vmin 0;
 }
 
-.marcas .row .text-white {
-  padding: 0vmin 0vmin 5vmin 0vmin;
-}
-
-.marcas .row .logomarcas {
-  padding: 0vmin 10vmin;
-}
-
-.marcas .text-white h2 {
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 3rem;
-  text-transform: uppercase;
-}
-
-.marcas h3 {
-  color: var(--purple-gil);
-  font-size: 42px;
-  font-weight: 500;
-  line-height: 3rem;
-}
-
-.text-yellow {
-  color: var(--yellow-gil);
-}
-
-.text-purple {
-  color: var(--purple-gil);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 2rem;
-}
-
-.marcas p {
-  color: var(--purple-gil);
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 10px;
-  text-decoration: none;
-}
-
-.marcas .logomarcas img {
-  border-radius: 8px;
-  transition: all ease 0.4s;
-  margin: 1em;
-}
-
-.marcas .logomarcas img:hover {
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
-}
-
-.slick-dots {
-  bottom: initial !important;
-}
-
-@media (max-width: 768px) {
-  .marcas {
-    height: auto;
-    padding: 10vmin 0;
+@media only screen and (max-width: 1200px) {
+  .marcas .montadoras {
+    width: 100%;
   }
 }
 
-.marcas .col-md-3 img:hover {
+.marcas .montadoras i {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  cursor: pointer;
+  color: #727376;
+  width: 37px;
+  height: 14px;
+}
+
+.marcas .montadoras i.fa-chevron-right {
+  right: -180px;
+  top: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .marcas .montadoras i.fa-chevron-right {
+    right: 0;
+  }
+}
+
+
+.marcas .montadoras i.fa-chevron-left {
+  left: -120px;
+  top: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .marcas .montadoras i.left-arrow {
+    left: 0;
+  }
+}
+
+/* we help */
+header, section .we-help {
+  overflow-x: auto;
+}
+
+.we-help {
+  background: var(--green-poussee);
+  padding: 100px 0px;
+}
+
+.we-help .foto-quem img {
+  width: 90%;
+  margin-top: -180px;
+  z-index: 1;
+}
+
+/* equipe */
+
+.equipe {
+  background: #000;
+  color: #fff;
+  padding: 100px 0px;
+}
+
+.equipe .text-equipe  {
+  width: 60%;
+  display: grid;
+  align-self: center;
+}
+
+.equipe .foto-equipe  {
+  width: 60%;
+  display: grid;
+  align-self: center;
+}
+
+.equipe .foto-equipe img {
+  margin-bottom: 30px;
+  transition: 0.3s all;
+}
+
+.equipe .foto-equipe img:hover {
   transform: scale(1.1);
-  transition: 0.3s;
 }
 
-/* ---------- Marcas ----------- */
+/* cases */
 
-.numeros .icon-one {
-  border-right: 1px solid #fff;
+.cases {
+  background: url("/assets/img/banner-cases.png") no-repeat;
+  background-position: top;
+  background-size: auto;
+  color: #fff;
+  padding: 100px 0px;
 }
 
-.numeros .icon-two {
-  border-right: 1px solid #fff;
+.cases .cards {
+  padding: 80px 30px 0px 30px;
 }
 
-.numeros .icon-three {
-  border-right: 1px solid #fff;
+.cases .card-green {
+  background: var(--green-poussee);
 }
 
-@media (max-width: 768px) {
-  .numeros .title-content {
-    border-right: none;
-  }
+.cases .card-green .card {
+  background: var(--green-poussee);
+  color: #000;
+  border: none;
+  padding: 30px;
+}
+
+.cases .card-black .card {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 30px;
+}
+
+.cases .card-green .card img {
+  width: 15%;
+  align-self: center;
+}
+
+.cases .card-black .card img {
+  width: 15%;
+  align-self: center;
+}
+
+.cases .card-green .card .card-body hr {
+    border-top: 4px solid #000 !important;
+}
+
+.cases .card-green .card .card-body .card-title {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.cases .card-black .card .card-body .card-title {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.cases .card-green .card .card-body .enfase {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.cases .card-black .card .card-body .enfase {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* conquistas */
+
+.conquistas {
+  padding: 100px 0px;
+}
+
+.conquistas .data-title {
+  color: var(--green-poussee);
+  font-weight: 700;
+}
+
+.conquistas p {
+  padding-right: 40px;
+}
+
+/* seja */
+
+.seja {
+  background: #000;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.seja .notebook img {
+  width: 100%;
+  margin-top: -200px;
+  z-index: 1;
 }
 
 /* texts */
+
+.home-title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 3rem;
+}
 
 .text-white {
   color: #fff;
@@ -1079,12 +1368,19 @@ hr {
   text-decoration: none;
 }
 
-.footer-size{
+.footer-size {
   padding: 0 15%;
 }
 
-.footer-icons{
-  padding: 2% 30%;
+.footer-icons {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-icons li {
+  cursor: pointer;
+    display: inline-block;
+    margin: 10px 10px;
 }
 
 .btn-cadastrar:hover {
