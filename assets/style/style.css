@@ -150,8 +150,8 @@ section {
   --green-poussee: #59CB59;
   --black-poussee: #201E1E;
   --light-pink: #fd6699;
-  --yellow-gil: #ffc10e;
-  --purple-gil: #4d366d;
+  --yellow-bold: #ffc10e;
+  --purple-grey: #4d366d;
   --dark-blue: #061a3b;
   --light-black: #727376;
   --bggradient: linear-gradient(to bottom, #fe053f, #d31c30);
@@ -160,6 +160,7 @@ section {
 }
 
 html {
+  scroll-behavior: auto;
   scroll-behavior: smooth;
 }
 
@@ -175,6 +176,28 @@ body {
   background: var(--green-poussee);
 }
 
+/* scroll bar width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .main-header {
   background: url("/assets/img/banner-home.png") no-repeat bottom;
   background-size: cover;
@@ -183,21 +206,72 @@ body {
   overflow: hidden;
 }
 
-.bg-voce {
-  background: url("../img/para-voce/bg-voce.png") no-repeat center;
+.bg-ecommerce {
+  background: url("../img/o-que-fazemos/ecommerce-header.png") no-repeat center;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
 }
 
-.bg-negocio {
-  background: url("../img/para-negocio/bg-negocio.png") no-repeat center;
+.bg-anuncio {
+  background: url("../img/o-que-fazemos/anuncios-header.png") no-repeat center;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
 }
 
-.bg-produtos {
-  background: #acacac;
+.bg-branding {
+  background: url("../img/o-que-fazemos/branding-header.png") no-repeat center;
+  background-size: cover;
+  height: 70vh;
 }
+
+.bg-desenvolvimento {
+  background: url("../img/o-que-fazemos/desenvolvimento-header.png") no-repeat center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.bg-full-service {
+  background: url("../img/o-que-fazemos/fullService-header.png") no-repeat center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.bg-inbound-marketing {
+  background: url("../img/o-que-fazemos/inbound-header.png") no-repeat center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.bg-seo {
+  background: url("../img/o-que-fazemos/seo-header.png") no-repeat center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.bg-social-media {
+  background: url("../img/o-que-fazemos/socialMedia-header.png") no-repeat center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.bg-nossa-historia {
+  background: url("../img/quem-somos/nossaHistoria-banner.png") no-repeat center;
+  background-size: cover;
+  height: 90vh;
+}
+
+.bg-nosso-time {
+  background: url("../img/quem-somos/nossoTime-banner.png") no-repeat center;
+  background-size: cover;
+  height: 90vh;
+}
+
+.bg-contato {
+  background: url("../img/contato/contato-banner.png") no-repeat center;
+  background-size: cover;
+  height: 90vh;
+}
+
 
 .menu {
   background-color: transparent;
@@ -211,14 +285,34 @@ body {
 }
 
 .menu ul {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
 }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  color: #212529!important;
+  text-align: left;
+  list-style: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+    box-shadow: 0 0px 32px rgb(56 37 37 / 6%), 0 0px 10px rgb(0 0 0 / 5%);
+    background-color: rgba(0, 0, 0, 0.9)!important;
+}
+
 
 .main-header .menu ul a {
   text-decoration: none;
@@ -240,15 +334,28 @@ body {
   color: var(--green-poussee);
 }
 
+.main-header .menu .dropdown ul a:hover {
+  color: var(--green-poussee);
+}
+
 .main-header .menu .active {
-  color: var(--purple-gil);
+  color: #fff;
   border-bottom: 2px solid #59CB59;
   border-radius: 3px;
 }
 
+.main-header .menu .dropdown .active {
+  color: #fff;
+  border-bottom: 2px solid #59CB59;
+  border-radius: 2px;
+}
+
+
 .main-header .menu ul a:hover img {
   transform: scale(1.1);
 }
+
+
 
 
 
@@ -284,31 +391,78 @@ body {
     color: #fff;
   }
 
-  .bg-voce {
-    background: url("../img/para-voce/bg-voce.png") no-repeat center;
+  .bg-ecommerce {
+    background: url("../img/o-que-fazemos/ecommerce-header.png") no-repeat center;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
   }
 
-  .bg-negocio {
-    background: url("../img/para-negocio/bg-negocio.png") no-repeat center;
+  .bg-anuncio {
+    background: url("../img/o-que-fazemos/anuncios-header.png") no-repeat center;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
   }
 
-  .main-header video {
-    display: none;
+  .bg-branding {
+    background: url("../img/o-que-fazemos/branding-header.png") no-repeat center;
+    background-size: cover;
+    height: 70vh;
   }
 
-
-  .header-home .header-text p {
-    width: 100% !important;
+  .bg-desenvolvimento {
+    background: url("../img/o-que-fazemos/desenvolvimento-header.png") no-repeat center;
+    background-size: cover;
+    height: 70vh;
   }
+
+  .bg-full-service {
+    background: url("../img/o-que-fazemos/fullService-header.png") no-repeat center;
+    background-size: cover;
+    height: 70vh;
+  }
+
+  .bg-inbound-marketing {
+    background: url("../img/o-que-fazemos/inbound-header.png") no-repeat center;
+    background-size: cover;
+    height: 70vh;
+  }
+
+  .bg-seo {
+    background: url("../img/o-que-fazemos/seo-header.png") no-repeat center;
+    background-size: cover;
+    height: 70vh;
+  }
+
+  .bg-social-media {
+    background: url("../img/o-que-fazemos/socialMedia-header.png") no-repeat center;
+    background-size: cover;
+    height: 70vh;
+  }
+
+  .bg-nossa-historia {
+    background: url("../img/quem-somos/nossaHistoria-banner.png") no-repeat center;
+    background-size: cover;
+    height: 70vh;
+  }
+
+  .bg-nosso-time {
+    background: url("../img/quem-somos/nossoTime-banner.png") no-repeat center;
+    background-size: cover;
+    height: 70vh;
+  }
+
+  .bg-contato {
+    background: url("../img/contato/contato-banner.png") no-repeat center;
+    background-size: cover;
+    height: 70vh;
+  }
+
 }
 
 .header-home h1 {
   font-weight: 700;
   margin: 0px 0px 32px;
+  z-index: -1;
 }
 
 .header-home .header-text {
@@ -410,6 +564,7 @@ hr {
       , rgb(89, 203, 89) 0%, rgb(89, 203, 89) 100%), linear-gradient(
       120deg
       , transparent, transparent);
+      margin-right: 20px;
 }
 
 
@@ -475,60 +630,42 @@ hr {
   text-decoration: none;
 }
 
-.btn-green-outline {
-  background: transparent;
-  font-weight: 700;
+.btn-white {
   color: #fff;
-  padding: 10px 25px;
-  border: 1px solid #ffc10e;
-  border-radius: 10px;
-  transition: 0.3s ease all;
+  font-weight: 700;
+  text-decoration: none;
+    line-height: 2.15;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 0px 100%, 100% 100%;
+    background-size: 0px 8%, 100% 8%;
+    transition: background-size 0.2s ease-in-out 0s;
+    background-image: linear-gradient(
+      120deg
+      , rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%), linear-gradient(
+      120deg
+      , transparent, transparent);
 }
 
-.btn-green-outline i {
+
+.btn-white img {
   margin-left: 12px;
 }
 
-.btn-green-outline:hover {
-  background: var(--yellow-gil);
+.btn-white:hover {
   color: #fff;
   cursor: pointer;
-  letter-spacing: 0.02rem;
-  -webkit-box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.57);
-  box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.57);
-}
-
-.btn-green-outline a {
-  color: var(--yellow-gil);
-}
-
-.btn-green-outline:hover a {
-  color: #fff;
   text-decoration: none;
+  background-size: 100% 8%, 100% 8%;
 }
 
-.chega-mais {
+.title-service {
   color: #fff;
-  font-weight: 700;
-  transition: 0.2s all;
-  padding-bottom: 6px;
-  border-bottom: 2px solid #fff;
-}
-
-.chega-mais i {
-  padding-left: 12px;
-  transition: 0.2s all;
-}
-
-.chega-mais:hover {
-  text-decoration: none;
-  color: #fff;
-  border-bottom: 2px solid #fff;
-  letter-spacing: 0.03em;
-}
-
-.chega-mais:hover i {
-  padding-left: 16px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
 }
 
 .title-hashtag {
@@ -771,29 +908,29 @@ hr {
 }
 
 
-@media (max-width: 768px) {
- 
-  .marcas .row .text-white {
-    padding: 10vmin 1vmin 0 1vmin !important;
-    text-align: center !important;
-  }
-
-  .slick-slide img {
-    display: initial !important;
-  }
-
-  .varejo .row .text-white {
-    padding: 15vmin 5vmin 0vmin 5vmin;
-    text-align: center;
-  }
-}
-
 /* Section-2 marcas */
 
 .marcas  {
   padding-top: 10px;
   padding-bottom: 200px;
   text-align: center;
+}
+
+.marcas-time {
+  background: var(--green-poussee);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.marcas-time .montadoras .logo {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .marcas .montadoras .logo {
@@ -811,12 +948,23 @@ hr {
   display: initial !important;
 }
 
+.marcas-time .montadoras .logo img {
+  display: initial !important;
+}
+
 .marcas .montadoras {
   width: 850px;
   display: block;
   margin: 0 auto;
   position: relative;
 }
+
+/*.marcas-time .montadoras {
+  width: 850px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}*/
 
 @media only screen and (max-width: 1200px) {
   .marcas .montadoras {
@@ -836,21 +984,21 @@ hr {
   height: 14px;
 }
 
-.marcas .montadoras i.fa-chevron-right {
+.marcas .montadoras i.right-arrow {
   right: -180px;
-  top: 50%;
+  background-image: url("/assets/img/quem-somos/setaCarrosel-dir.png");
 }
 
 @media only screen and (max-width: 600px) {
-  .marcas .montadoras i.fa-chevron-right {
+  .marcas .montadoras i.right-arrow {
     right: 0;
   }
 }
 
 
-.marcas .montadoras i.fa-chevron-left {
+.marcas .montadoras i.left-arrow {
   left: -120px;
-  top: 50%;
+  background-image: url("/assets/img/quem-somos/setaCarrossel-esq.png");
 }
 
 @media only screen and (max-width: 600px) {
@@ -918,6 +1066,36 @@ header, section .we-help {
   opacity: 0.5;
 }
 
+.floater-detail-solutions {
+  position: absolute;
+  width: 50%;
+  top: auto;
+  margin-top: 800px;
+  left: 0;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.floater-detail-historia {
+  position: absolute;
+  width: 50%;
+  top: auto;
+  margin-top: -750px;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.floater-detail-time {
+  position: absolute;
+  width: 50%;
+  top: auto;
+  margin-top: 0px;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
 /* equipe */
 
 .equipe {
@@ -952,13 +1130,17 @@ header, section .we-help {
 .cases {
   background: url("/assets/img/banner-cases.png") no-repeat;
   background-position: top;
-  background-size:contain;
+  background-size:inherit;
   color: #fff;
   padding: 100px 0px;
 }
 
 .cases .cards {
   padding: 80px 30px 0px 30px;
+}
+
+.cases .card-cases {
+  padding: 80px 0px;
 }
 
 .cases .card-green {
@@ -1041,7 +1223,37 @@ header, section .we-help {
 .seja .notebook img {
   width: 100%;
   margin-top: -180px;
+  padding-bottom: 40px;
   z-index: 1;
+}
+
+.img-brands img {
+  width: 100%;
+}
+
+.premios {
+  padding: 100px 0px;
+  background: var(--green-poussee);
+}
+
+.premios .premio-img {
+  padding: 10px 20px;
+  transition: all 0.2s;
+}
+
+.premios .premio-img:hover {
+  transform: scale(1.1);
+}
+
+.premios h3 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.premios p {
+  font-weight: 600;
+  color: #000;
+  margin: 0 20px;
 }
 
 /* texts */
@@ -1107,10 +1319,6 @@ header, section .we-help {
   text-decoration: none;
 }
 
-::placeholder {
-  /* Most modern browsers support this now. */
-  color: var(--purple-gil) !important;
-}
 
 /* Section-2 produtos */
 
@@ -1136,12 +1344,120 @@ header, section .we-help {
 
 /* -------------------- */
 
+.services-info {
+  padding: 100px 0px;
+}
 
+.nossa-historia {
+  padding-top: 100px;
+}
 
+.nosso-time {
+  padding: 100px 20px;
+}
 
+.nosso-time .card-time {
+  border: none;
+  -webkit-box-shadow: inset 0px -160px 27px -50px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0px -160px 27px -50px rgba(0,0,0,0.3);
+  box-shadow: inset 0px -160px 27px -50px rgba(0,0,0,0.3);
+  transition: all 0.2s;
+}
 
-/* Forms */
+.nosso-time .card-time:hover {
+  border: none;
+  transform: scale(1.05);
+}
 
+.nosso-time .info-time  {
+  padding: 1em 1em;
+  text-align: center;
+}
+
+.nosso-time .info-time hr {
+  margin: 0;
+  padding: 0;
+}
+
+.nosso-time .title-time {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.nosso-time .text-time {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nosso-time .grid-time {
+  max-width: 372px;
+}
+
+.img-service img {
+  width: inherit;
+}
+
+.solutions-info {
+  background: #000;
+  color: #fff;
+  padding: 100px 0px;
+}
+
+.solution-grid {
+  padding: 20px 10px;
+}
+
+.item-solution {
+  min-width: 250px;
+  max-width: 33%!important;
+  margin: 15px 0;
+}
+
+.solutions-info .title-solution {
+  color: var(--green-poussee);
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-flex;
+}
+
+.solutions-info .title-solution img {
+  margin-right: 10px;
+  max-height: 23px;
+}
+
+/* Contato */
+
+.contato {
+  padding: 100px 0;
+}
+
+.fale {
+  background: #000;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.fale .contact-info {
+  align-items: center;
+}
+
+.fale .contact-info img {
+  margin-right: 10px;
+  max-height: 40px;
+}
+
+.fale .contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fale .contact-info p {
+  margin-top: 10px;
+}
 
 
 /* Footer */
