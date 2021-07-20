@@ -286,6 +286,12 @@ body {
 	height: 90vh;
 }
 
+.bg-cases {
+	background: url('../img/cases/NossosCases-banner.png') no-repeat center;
+	background-size: cover;
+	height: 90vh;
+}
+
 .bg-nosso-time {
 	background: url('../img/quem-somos/nossoTime-banner.png') no-repeat center;
 	background-size: cover;
