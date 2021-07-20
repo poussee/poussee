@@ -280,6 +280,12 @@ body {
 	height: 90vh;
 }
 
+.bg-case-contabil {
+	background: url('../img/cases/caseContabil-banner.png') no-repeat center;
+	background-size: cover;
+	height: 90vh;
+}
+
 .bg-nosso-time {
 	background: url('../img/quem-somos/nossoTime-banner.png') no-repeat center;
 	background-size: cover;
@@ -710,7 +716,7 @@ hr {
 /* Section-1 soluções */
 
 .solucoes {
-	padding: 100px 0px;
+	padding: 90px 0px;
 }
 
 .solucoes .sistemas-boxes {
@@ -720,7 +726,7 @@ hr {
 	align-items: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	padding-top: 30px;
+	padding-top: 3px;
 	padding-left: 40px;
 	padding-right: 40px;
 }
@@ -1067,9 +1073,14 @@ section .we-help {
 	position: absolute;
 	width: 50%;
 	top: 3000px;
-	left: -120px;
+	left: -60px;
 	z-index: 0;
 	opacity: 0.5;
+}
+
+.floater-detail img {
+	width: 150px;
+	object-fit: contain;
 }
 
 .floater-detail2 {
@@ -1117,7 +1128,7 @@ section .we-help {
 }
 
 .floater-detail-historia img {
-	width: 180px;
+	max-width: 25%;
 }
 
 .floater-detail-time {
@@ -1160,6 +1171,7 @@ section .we-help {
 .equipe .foto-equipe img {
 	margin-bottom: 30px;
 	transition: 0.3s all;
+	width: 100%;
 }
 
 .equipe .foto-equipe img:hover {
@@ -1391,6 +1403,19 @@ section .we-help {
 
 .nossa-historia {
 	padding-top: 100px;
+}
+
+.case-main-1 {
+	padding-top: 300px;
+}
+
+.case-main {
+	padding-top: 100px;
+}
+
+.cases-main {
+	position: relative;
+	padding: 100px 0 50px;
 }
 
 .nosso-time {
@@ -1740,4 +1765,208 @@ section .we-help {
 
 .our-history-correction {
 	padding-left: 0 !important;
+}
+
+.case-customer h3 {
+	color: #000;
+	font-weight: 700;
+
+	padding-top: 20px;
+	text-align: center;
+
+	font-size: 18px;
+}
+
+.case-customer p {
+	font-weight: 600;
+	color: #000;
+	margin: 0 50px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.resultados {
+	padding: 100px 0px;
+	background: var(--green-poussee);
+	position: relative;
+	overflow: hidden;
+}
+
+.resultados h3 {
+	color: #fff;
+	font-weight: 700;
+}
+
+.resultados p {
+	font-weight: 600;
+	color: #000;
+	margin: 0 20px;
+}
+
+.chain-overlay-left {
+	top: -70px;
+	left: -20px;
+}
+
+.chain-overlay-right {
+	bottom: -70px;
+	right: -20px;
+}
+
+.chain-overlay-left,
+.chain-overlay-right {
+	width: 30%;
+	position: absolute;
+}
+
+.chain-overlay-left img,
+.chain-overlay-right img {
+	width: 100%;
+}
+
+.green-background-case {
+	background-color: var(--green-poussee);
+	margin-top: 300px;
+}
+
+.bg-contabil-customer {
+	background: url('../img/cases/caseContabil-testeira.png') no-repeat center;
+	background-size: cover;
+	height: 70vh;
+
+	margin-top: -5px;
+}
+
+.floater-detail-cases-intern-left {
+	position: absolute;
+	width: 50%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+.floater-detail-cases-intern-right {
+	position: absolute;
+	width: 50%;
+	top: 1200px;
+	right: 0;
+	z-index: 9999;
+	opacity: 0.5;
+	text-align: right;
+}
+
+.floater-detail-case-intern-left {
+	position: absolute;
+	width: 50%;
+	top: auto;
+	margin-top: -700px;
+	left: 0;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+.floater-detail-case-intern-right {
+	position: absolute;
+	width: 50%;
+	top: auto;
+	margin-top: -700px;
+	right: 0;
+	z-index: -1;
+	opacity: 0.5;
+	text-align: right;
+}
+
+.floater-detail-case-intern-left > img,
+.floater-detail-case-intern-right > img {
+	max-width: 25%;
+}
+
+.floater-detail-cases-intern-left > img,
+.floater-detail-cases-intern-right > img {
+	max-width: 20%;
+}
+
+.cases-row {
+	margin-bottom: 60px;
+}
+
+.case-card {
+	background-color: var(--green-poussee);
+	padding: 25px 0;
+	min-height: 352px !important;
+}
+
+.case-card h3 {
+	font-size: 18px;
+
+	margin: 15px 0 10px;
+	font-weight: bold;
+}
+
+.case-card p {
+	width: 90%;
+	min-height: 100px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.case-card .icon {
+	width: 25%;
+}
+
+.case-card a {
+	max-width: 150px;
+	margin: 0 auto;
+}
+
+.case-card a img {
+	width: 100%;
+}
+
+.cases-title {
+	margin-bottom: 50px;
+}
+
+.cases-title h2 {
+	font-weight: bold;
+}
+
+.segment-filter {
+	margin-left: 10px;
+	border: 1px solid var(--green-poussee);
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.segment-filter-on {
+	background-color: var(--green-poussee);
+}
+
+@media (max-width: 990px) {
+	.green-background-case {
+		background-color: var(--green-poussee);
+		margin-top: 150px;
+	}
+}
+
+@media (max-width: 768px) {
+	.flex-adjustment {
+		flex-direction: column-reverse;
+	}
+
+	.green-background-case {
+		background-color: var(--green-poussee);
+		margin-top: 300px;
+	}
+}
+
+@media (max-width: 400px) {
+	.green-background-case {
+		background-color: var(--green-poussee);
+		margin-top: 100px;
+	}
 }
