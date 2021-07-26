@@ -15,7 +15,7 @@ const cases = [
 			'185%',
 			'o número de usuários de um e-commerce B2B ma Black Friday.',
 		],
-		link: '#',
+		link: './case-distribuidora.html',
 		type: 'B2B',
 	},
 	{
@@ -25,7 +25,7 @@ const cases = [
 			'Como ajudamos a criar presença digital de empresa de telecomunicações em',
 			'menos de 6 meses.',
 		],
-		link: '#',
+		link: './case-contact-center.html',
 		type: 'B2B',
 	},
 	{

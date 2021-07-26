@@ -286,6 +286,24 @@ body {
 	height: 90vh;
 }
 
+.bg-case-contact {
+	background: url('../img/cases/caseTelecom-banner.png') no-repeat center;
+	background-size: cover;
+	height: 90vh;
+}
+
+.bg-case-distribuidora {
+	background: url('../img/cases/caseDistribuidora-banner.png') no-repeat center;
+	background-size: cover;
+	height: 90vh;
+}
+
+.bg-case-mascaras {
+	background: url('../img/cases/caseMascaras-banner.png') no-repeat center;
+	background-size: cover;
+	height: 90vh;
+}
+
 .bg-cases {
 	background: url('../img/cases/NossosCases-banner.png') no-repeat center;
 	background-size: cover;
@@ -983,10 +1001,14 @@ hr {
 
 .marcas .montadoras .logo img {
 	display: initial !important;
+	max-width: 300px;
+	object-fit: contain;
 }
 
 .marcas-time .montadoras .logo img {
 	display: initial !important;
+	max-width: 300px;
+	object-fit: contain;
 }
 
 .marcas .montadoras {
@@ -1415,6 +1437,10 @@ section .we-help {
 	padding-top: 300px;
 }
 
+.case-main-2 {
+	padding-top: 650px;
+}
+
 .case-main {
 	padding-top: 100px;
 }
@@ -1836,6 +1862,11 @@ section .we-help {
 	margin-top: 300px;
 }
 
+.green-background-case-2 {
+	background-color: var(--green-poussee);
+	margin-top: 50px;
+}
+
 .bg-contabil-customer {
 	background: url('../img/cases/caseContabil-testeira.png') no-repeat center;
 	background-size: cover;
@@ -1844,9 +1875,34 @@ section .we-help {
 	margin-top: -5px;
 }
 
+.bg-contact-customer {
+	background: url('../img/cases/caseTelecom-testeira.png') no-repeat center;
+	background-size: cover;
+	height: 70vh;
+
+	margin-top: -5px;
+}
+
+.bg-distribuidora-customer {
+	background: url('../img/cases/caseDistribuidora-testeira.png') no-repeat
+		center;
+	background-size: cover;
+	height: 70vh;
+
+	margin-top: -5px;
+}
+
+.bg-mascaras-customer {
+	background: url('../img/cases/caseMAscara-testeira.png') no-repeat center;
+	background-size: cover;
+	height: 100vh;
+
+	margin-top: -5px;
+}
+
 .floater-detail-cases-intern-left {
 	position: absolute;
-	width: 50%;
+	width: 30%;
 	top: 0;
 	left: 0;
 	z-index: -1;
@@ -1855,7 +1911,7 @@ section .we-help {
 
 .floater-detail-cases-intern-right {
 	position: absolute;
-	width: 50%;
+	width: 30%;
 	top: 1200px;
 	right: 0;
 	z-index: 9999;
@@ -1865,7 +1921,7 @@ section .we-help {
 
 .floater-detail-case-intern-left {
 	position: absolute;
-	width: 50%;
+	width: 30%;
 	top: auto;
 	margin-top: -700px;
 	left: 0;
@@ -1891,7 +1947,7 @@ section .we-help {
 
 .floater-detail-cases-intern-left > img,
 .floater-detail-cases-intern-right > img {
-	max-width: 20%;
+	max-width: 40%;
 }
 
 .cases-row {
@@ -1952,10 +2008,24 @@ section .we-help {
 	background-color: var(--green-poussee);
 }
 
+.footer-rd-seal {
+	max-width: 150px;
+	object-fit: contain;
+}
+
 @media (max-width: 990px) {
 	.green-background-case {
 		background-color: var(--green-poussee);
 		margin-top: 150px;
+	}
+
+	.green-background-case-2 {
+		background-color: var(--green-poussee);
+		margin-top: 50px;
+	}
+
+	.case-main-2 {
+		padding-top: 1100px;
 	}
 }
 
@@ -1968,11 +2038,43 @@ section .we-help {
 		background-color: var(--green-poussee);
 		margin-top: 300px;
 	}
+
+	.case-main-2 {
+		padding-top: 650px;
+	}
+}
+
+@media (max-width: 460px) {
+	.case-main-2 {
+		padding-top: 800px;
+	}
 }
 
 @media (max-width: 400px) {
 	.green-background-case {
 		background-color: var(--green-poussee);
 		margin-top: 100px;
+	}
+
+	.case-main-2 {
+		padding-top: 1000px;
+	}
+}
+
+@media (max-width: 360px) {
+	.case-main-2 {
+		padding-top: 1200px;
+	}
+}
+
+@media (max-width: 340px) {
+	.case-main-2 {
+		padding-top: 1300px;
+	}
+}
+
+@media (max-width: 320px) {
+	.case-main-2 {
+		padding-top: 1550px;
 	}
 }
