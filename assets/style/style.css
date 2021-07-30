@@ -348,8 +348,8 @@ body {
 	z-index: 1000;
 	display: none;
 	float: left;
-	min-width: 10rem;
-	padding: 0.5rem 0;
+	min-width: 12rem !important;
+	padding: 0.5rem 5px !important;
 	margin: 0.125rem 0 0;
 	font-size: 1rem;
 	color: #201e1e !important;
@@ -412,7 +412,7 @@ body {
 
 .diagnostico a {
 	background: var(--light-pink);
-	font-weight: 500;
+	font-weight: 600;
 	color: #fff;
 	padding: 15px 20px;
 	border-radius: 50px;
@@ -1147,7 +1147,7 @@ section .we-help {
 
 .floater-detail-historia {
 	position: absolute;
-	width: 50%;
+	width: 30%;
 	top: auto;
 	margin-top: -700px;
 	left: 0;
@@ -1156,7 +1156,7 @@ section .we-help {
 }
 
 .floater-detail-historia img {
-	max-width: 25%;
+	max-width: 40%;
 }
 
 .floater-detail-time {
@@ -1719,11 +1719,17 @@ section .we-help {
 .contact-form .column-div {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 20px;
 }
 
 .contact-form textarea,
 .contact-form input {
 	outline: none;
+	background-color: transparent;
+}
+
+.contact-form label {
+	background-color: white;
 }
 
 .contact-form input {
@@ -1954,9 +1960,14 @@ section .we-help {
 	margin-bottom: 60px;
 }
 
+.more-cases-row {
+	margin-bottom: 100px;
+}
+
 .case-card {
 	background-color: var(--green-poussee);
 	padding: 25px 0;
+	margin: 20px 0;
 	min-height: 352px !important;
 }
 
@@ -1965,6 +1976,8 @@ section .we-help {
 
 	margin: 15px 0 10px;
 	font-weight: bold;
+	text-align: center;
+	color: black;
 }
 
 .case-card p {
@@ -1972,6 +1985,7 @@ section .we-help {
 	min-height: 100px;
 	margin-top: 15px;
 	text-align: center;
+	color: black;
 }
 
 .case-card .icon {
@@ -2011,6 +2025,10 @@ section .we-help {
 .footer-rd-seal {
 	max-width: 150px;
 	object-fit: contain;
+}
+
+.cardRow {
+	margin-bottom: 40px;
 }
 
 @media (max-width: 990px) {

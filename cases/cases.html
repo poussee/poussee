@@ -4,18 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>
-			Websites de Alta Performance | Agência Poussée | Nossa História
-		</title>
+		<title>Nossa História | Agência Poussée</title>
 		<meta
 			name="description"
 			content="Somos especialistas em Website de alta performance, Gestão de Marcas e Marketing de Resultados. Se você quer vender mais, nós queremos te conhecer.​"
 		/>
 		<link
 			rel="shortcut icon"
-			href="https://poussee.com.br./assets/img/icon/favicon-32x32.png"
+			href="https://poussee.com.br/assets/img/icon/favicon-32x32.png"
 			type="image/x-icon"
 		/>
+		<link rel="shortcut icon" href="../assets/img/favicon.ico" />
 		<link rel="stylesheet" href="../assets/style/style.css" />
 		<link rel="stylesheet" href="../Content/Plugins/Slick/slick.min.css" />
 		<link rel="stylesheet" href="../Content/Plugins/Slick/slick-theme.css" />
@@ -31,7 +30,6 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
 		/>
-		<link rel="shortcut icon" href="../assets/img/favicon.ico" />
 		<script src="https://unpkg.com/scrollreveal"></script>
 		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	</head>
@@ -80,7 +78,7 @@
 									</li>
 									<li class="p-2 nav-item">
 										<a href="../o-que-fazemos/desenvolvimento.html"
-											>Desenvolvimento</a
+											>Crescimento</a
 										>
 									</li>
 									<li class="p-2 nav-item">
@@ -181,23 +179,28 @@
 						>
 							<h2>Cases</h2>
 							<img src="" alt="" />
-							<p>
+							<!-- <p>
 								Filtre por segmento:
 								<span class="segment-filter segment-filter-on b2b-buttom"
 									>B2B</span
 								><span class="segment-filter segment-filter-on b2c-buttom"
 									>B2C</span
 								>
-							</p>
+							</p> -->
 						</div>
 					</div>
-
 					<div
-						class="row cases-row"
-						style="display: flex; align-items: center; justify-content: center"
+						class="container"
+						id="cases-row"
+						style="
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+						"
 					></div>
 					<div
-						class="row cases-row"
+						class="row more-cases-row"
 						style="display: flex; align-items: center; justify-content: center"
 					>
 						<div
@@ -208,9 +211,9 @@
 								justify-content: center;
 							"
 						>
-							<a href="./case-mascaras.html" style="width: fit-content">
+							<span class="moreCases" style="width: fit-content">
 								<img src="../assets/img/cases/cta-vejaMais.png" alt="" />
-							</a>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -239,11 +242,6 @@
 							</h2>
 							<p class="home-text pt-3">
 								<a href="../contato.html" class="btn-green"
-									>Confira mais cases
-									<img src="../assets/img/arrow.png" alt="Seta"
-								/></a>
-								<br />
-								<a href="../contato.html" class="btn-green"
 									>Quero falar com vocês
 									<img src="../assets/img/arrow.png" alt="Seta"
 								/></a>
@@ -263,19 +261,16 @@
 				</div>
 				<div class="row text-center pt-5 footer-size">
 					<div class="col-sm text-center">
-						<p><a href="#">O que fazemos</a></p>
+						<p><a href="../index.html#solucoes">O que fazemos</a></p>
 					</div>
 					<div class="col-sm text-center">
-						<p><a href="#">Quem somos</a></p>
+						<p><a href="../quem-somos/nossa-historia.html">Quem somos</a></p>
 					</div>
 					<div class="col-sm text-center">
-						<p><a href="#">Nosos cases</a></p>
+						<p><a href="./cases.html">Nosos cases</a></p>
 					</div>
 					<div class="col-sm text-center">
-						<p><a href="#">Nosos cases</a></p>
-					</div>
-					<div class="col-sm text-center">
-						<p><a href="#">Contato</a></p>
+						<p><a href="../contato.html">Contato</a></p>
 					</div>
 				</div>
 				<div class="row">
