@@ -1813,6 +1813,11 @@ section .we-help {
 	border-radius: 50px;
 }
 
+.contact-form-image img {
+	width: 100%;
+	object-fit: cover;
+}
+
 .our-history-correction {
 	padding-left: 0 !important;
 }
@@ -2045,7 +2050,7 @@ section .we-help {
 
 .form-succeed {
 	position: fixed;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -2064,7 +2069,7 @@ section .we-help {
 
 .form-error {
 	position: fixed;
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	z-index: 9999;
@@ -2081,6 +2086,7 @@ section .we-help {
 	width: fit-content;
 	height: fit-content;
 	padding: 40px;
+	max-width: 95%;
 
 	font-weight: 600;
 
@@ -2131,6 +2137,11 @@ section .we-help {
 
 	.case-main-2 {
 		padding-top: 650px;
+	}
+
+	.contact-form {
+		width: 100%;
+		margin-bottom: 40px;
 	}
 }
 
