@@ -11,10 +11,10 @@
 		/>
 		<link
 			rel="shortcut icon"
-			href="https://poussee.com.br/assets/img/icon/favicon-32x32.png"
+			href="./assets/img/favicon-32x32.png"
 			type="image/x-icon"
 		/>
-		<link rel="shortcut icon" href="./assets/img/favicon.ico" />
+		<link rel="shortcut icon" href="./assets/img/favicon-32x32.png" />
 		<link rel="stylesheet" href="./assets/style/style.css" />
 		<link rel="stylesheet" href="./Content/Plugins/Slick/slick.min.css" />
 		<link rel="stylesheet" href="./Content/Plugins/Slick/slick-theme.css" />
@@ -34,6 +34,21 @@
 		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	</head>
 	<body>
+		<div class="form-succeed">
+			<img class="close-form-succeed" src="./assets/img/arrow.png" alt="" />
+			<h4>Teste</h4>
+			<p>Teste</p>
+		</div>
+		<div class="form-error">
+			<div>
+				<h4>Erro</h4>
+				<p>
+					Por favor preencha todos os campos destacados<br />
+					em vermelho!
+				</p>
+				<span class="close-form-error">Entendi</span>
+			</div>
+		</div>
 		<header class="main-header bg-contato">
 			<nav class="menu navbar navbar-expand-lg">
 				<div class="container">
@@ -74,7 +89,9 @@
 										<a href="o-que-fazemos/branding.html">Branding</a>
 									</li>
 									<li class="p-2 nav-item">
-										<a href="o-que-fazemos/desenvolvimento.html">Crescimento</a>
+										<a href="o-que-fazemos/desenvolvimento.html"
+											>Desenvolvimento</a
+										>
 									</li>
 									<li class="p-2 nav-item">
 										<a href="o-que-fazemos/e-commerce.html">E-commerce</a>
@@ -155,34 +172,40 @@
 							<p class="subtitle">Envie uma mensagem</p>
 							<hr />
 							<h2 class="home-title pt-1">
-								e saiba mais sobre <br />
+								E saiba mais sobre <br />
 								nossas soluções
 							</h2>
 							<form action="" class="contact-form">
 								<div class="form-content-container">
 									<div class="column-div">
 										<label for="">Nome</label>
-										<input type="text" />
+										<input class="name" type="text" />
 									</div>
 									<div class="column-div">
 										<label for="">Telefone</label>
-										<input type="text" />
+										<input class="phone" type="text" />
 									</div>
 									<div class="column-div">
 										<label for="">E-mail</label>
-										<input type="text" />
+										<input class="email" type="text" />
 									</div>
 									<div class="column-div">
 										<label for="">Empresa</label>
-										<input type="text" />
+										<input class="enterprise" type="text" />
 									</div>
 									<div class="column-div">
 										<label for="">Mensagem</label>
-										<textarea name="" id="" cols="30" rows="10"></textarea>
+										<textarea
+											class="messageInput"
+											name=""
+											id=""
+											cols="30"
+											rows="10"
+										></textarea>
 									</div>
 									<div class="inline-div">
 										<div class="contact-checkbox">
-											<input type="checkbox" />
+											<input class="privacy-checkbox" type="checkbox" />
 										</div>
 										<label for=""
 											>Estou ciente das condições de tratamento dos meus dados e
@@ -191,7 +214,7 @@
 									</div>
 									<div class="inline-div">
 										<div class="contact-checkbox">
-											<input type="checkbox" />
+											<input class="accept-contact" type="checkbox" />
 										</div>
 										<label for=""
 											>Aceito receber conteúdos relacionados aos meus
@@ -199,7 +222,7 @@
 										>
 									</div>
 								</div>
-								<button>
+								<button type="submit">
 									Enviar
 									<img src="./assets/img/arrow-black.png" alt="Seta" />
 								</button>
@@ -348,3 +371,4 @@
 <script src="./Content/Plugins/scrollTo/jquery.localScroll.js"></script>
 <script src="./Scripts/main.js"></script>
 <script src="./Content/Plugins/Bootstrap/bootstrap.min.js"></script>
+<script src="./scripts/contactForm.js"></script>

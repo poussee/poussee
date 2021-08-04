@@ -362,12 +362,20 @@ body {
 	background-color: white !important;
 }
 
+.dropdown-menu > li {
+	display: flex;
+	padding-left: 16px !important;
+}
+
+.dropdown-toggle {
+	padding-right: 10px;
+}
+
 .main-header .menu ul a {
 	text-decoration: none;
 	font-weight: 600;
 	color: #fff;
 	transition: 0.4s all;
-	padding-right: 10px;
 }
 
 .main-header .menu ul button a {
@@ -1279,6 +1287,10 @@ section .we-help {
 	font-weight: 700;
 }
 
+.card-body .card-text {
+	font-weight: 600;
+}
+
 /* conquistas */
 
 .conquistas {
@@ -2029,6 +2041,66 @@ section .we-help {
 
 .cardRow {
 	margin-bottom: 40px;
+}
+
+.form-succeed {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	height: 100vh;
+	width: 100%;
+	max-width: 100%;
+	background-color: white;
+}
+
+.form-succeed img {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.form-error {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.form-error > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	height: fit-content;
+	padding: 40px;
+
+	font-weight: 600;
+
+	background-color: white;
+	color: black;
+}
+
+.form-error h4 {
+	font-weight: 600;
+}
+
+.form-error p {
+	text-align: center;
+}
+
+.form-error span {
+	margin-top: 20px;
+	padding: 10px 40px;
+	border-radius: 25px;
+	background-color: var(--green-poussee);
 }
 
 @media (max-width: 990px) {
