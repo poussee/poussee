@@ -1,3 +1,5 @@
+const axios = require('axios').default;
+
 // Form
 const contactForm = document.querySelector('.contact-form');
 
@@ -26,27 +28,24 @@ closeFormErrorButton.addEventListener('click', (e) => {
 	errorPage.style.display = 'none';
 });
 
-function checkFormValues() {}
-
-async function onSubmitContactForm(event) {
+async function onSubmitContactForm() {
 	const data = new FormData();
-	let values = [];
+	let valuesCounting = [];
 	formInputs.forEach((element) => {
 		if (element.type === 'checkbox') {
 			if (!element.checked) {
 				element.style.border = '2px solid red';
-				values.push(false);
-				console.log(element);
+				valuesCounting.push(false);
 			} else {
 				element.style.border = '2px solid var(--green-poussee)';
 			}
 		} else {
 			if (element.value === '') {
 				element.style.borderBottom = '2px solid red';
-				values.push(false);
-				console.log(element.value);
+				valuesCounting.push(false);
 			} else {
 				element.style.borderBottom = '2px solid var(--green-poussee)';
+				data.append(element.className, element.value);
 			}
 		}
 	});
@@ -54,16 +53,29 @@ async function onSubmitContactForm(event) {
 	if (formTextArea.value === '') {
 		formTextArea.style.borderLeft = '2px solid red';
 		formTextArea.style.borderBottom = '2px solid red';
-		values.push(false);
+		valuesCounting.push(false);
 	} else {
 		formTextArea.style.borderLeft = '2px solid var(--green-poussee)';
 		formTextArea.style.borderBottom = '2px solid var(--green-poussee)';
+		data.append(formTextArea.className, formTextArea.value);
 	}
 
-	if (values.length === 0) {
-		succeedPage.style.display = 'flex';
-	} else {
+	if (valuesCounting.length > 0) {
 		errorPage.style.display = 'flex';
+	} else {
+		await axios
+			.post('http://localhost:3000/send_mail', data, {
+				headers: {
+					'Content-Type': 'multipart/form-data',
+				},
+			})
+			.then((r) => {
+				succeedPage.style.display = 'flex';
+				console.log(r);
+			})
+			.catch((e) => {
+				console.log(e);
+			});
 	}
 }
 

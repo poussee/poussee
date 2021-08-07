@@ -1,0 +1,23 @@
+{
+	"name": "poussee",
+	"version": "1.0.0",
+	"description": "site",
+	"main": "index.js",
+	"scripts": {
+		"build": "browserify contactForm.js -o forms.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/poussee/poussee.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/poussee/poussee/issues"
+	},
+	"homepage": "https://github.com/poussee/poussee#readme",
+	"devDependencies": {
+		"axios": "^0.21.1",
+		"browserify": "^17.0.0"
+	}
+}

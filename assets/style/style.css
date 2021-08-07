@@ -2109,6 +2109,10 @@ section .we-help {
 	background-color: var(--green-poussee);
 }
 
+.moreCases {
+	cursor: pointer;
+}
+
 @media (max-width: 990px) {
 	.green-background-case {
 		background-color: var(--green-poussee);

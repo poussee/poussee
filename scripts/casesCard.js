@@ -47,7 +47,7 @@ const cases = [
 			'Veja como a nossa estratégia de Google Ads fez os',
 			'leads em vendas',
 			'de máscara no B2B subir de',
-			'0 para 831',
+			'0 para 831.',
 		],
 		link: './case-mascaras.html',
 		type: 'B2B',
