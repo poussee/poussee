@@ -6944,9 +6944,7 @@ button.bg-dark:hover {
 .px-1 {
 	padding-left: 0.25rem !important;
 }
-.p-2 {
-	padding: 0.5rem !important;
-}
+
 .pt-2,
 .py-2 {
 	padding-top: 0.5rem !important;

@@ -19,15 +19,15 @@ $(document).ready(function () {
 		autoplaySpeed: 2000,
 		responsive: [
 			{
-				breakpoint: 600,
+				breakpoint: 900,
 				settings: {
 					infinite: true,
-					arrows: false,
-					slidesToShow: 1,
+					arrows: true,
+					slidesToShow: 2,
 				},
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 768,
 				settings: {
 					infinite: true,
 					arrows: false,
