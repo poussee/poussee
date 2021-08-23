@@ -884,7 +884,7 @@ hr {
 .buscando {
 	background: #000;
 	color: #fff;
-	padding: 30px 30px;
+	padding: 50px 30px;
 }
 
 .buscando .col-sm {
@@ -2205,6 +2205,10 @@ section .we-help {
 		display: flex !important;
 	}
 
+	.list-solutions ul li a {
+		text-align: left;
+	}
+
 	.row {
 		gap: 40px;
 	}
@@ -2230,6 +2234,11 @@ section .we-help {
 
 	.foto-equipe {
 		display: none !important;
+	}
+
+	.floater-detail2,
+	.floater-detail {
+		display: none;
 	}
 }
 
