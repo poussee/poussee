@@ -766,10 +766,6 @@ hr {
 	max-width: 100%;
 }
 
-.solucoes .sistemas-boxes .slick-list {
-	width: 100%;
-}
-
 @media only screen and (max-width: 768px) {
 	.solucoes .sistemas-boxes {
 		-ms-flex-direction: column;
@@ -2151,6 +2147,16 @@ section .we-help {
 	padding: 10px 0;
 }
 
+.slick-track {
+	display: flex;
+	overflow: hidden;
+}
+
+.slick-list {
+	width: 100%;
+	overflow: hidden;
+}
+
 @media (max-width: 990px) {
 	.green-background-case {
 		background-color: var(--green-poussee);
@@ -2164,6 +2170,14 @@ section .we-help {
 
 	.case-main-2 {
 		padding-top: 1100px;
+	}
+
+	.break-row-991 {
+		flex-direction: column;
+	}
+
+	.break-row-991 > div {
+		max-width: 100%;
 	}
 }
 

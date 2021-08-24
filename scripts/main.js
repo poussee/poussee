@@ -49,15 +49,7 @@ $(document).ready(function () {
 		autoplaySpeed: 6000,
 		responsive: [
 			{
-				breakpoint: 600,
-				settings: {
-					infinite: true,
-					arrows: false,
-					slidesToShow: 1,
-				},
-			},
-			{
-				breakpoint: 480,
+				breakpoint: 768,
 				settings: {
 					infinite: true,
 					arrows: false,
