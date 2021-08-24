@@ -54,6 +54,7 @@ $(document).ready(function () {
 					infinite: true,
 					arrows: false,
 					slidesToShow: 1,
+					slidesToScroll: 1,
 				},
 			},
 		],
